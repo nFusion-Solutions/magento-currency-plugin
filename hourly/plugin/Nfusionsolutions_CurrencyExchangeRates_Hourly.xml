@@ -1,0 +1,85 @@
+<_>
+   <form_key>HXf7fGwm1eioxx5q</form_key>
+   <name>Nfusionsolutions_CurrencyExchangeRates_Hourly</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>This extension adds the capability in Magento to import currency conversion rates from nFusion Solutions&amp;apos; reliable, enterprise-class cloud platform for global currency data.</summary>
+   <description>This extension adds the capability in Magento to import currency conversion rates from nFusion Solutions&apos; reliable, enterprise-class cloud platform for global currency data. All settings are provided in the Magento admin. When you import currency rates in Magento from &quot;System-&amp;amp;gt;Manage Currency&quot; this plugin gives you the option to import rates from nFusion Solutions instead of from default Webservicex. You can also use the scheduled import feature in Magento to have currencies updated automatically using nFusion Solutions data.</description>
+   <license>Open Software License (OSL)</license>
+   <license_uri/>
+   <version>2.1.0.13</version>
+   <stability>stable</stability>
+   <notes>Enterprise class global currency exchange rates</notes>
+   <authors>
+      <name>
+         <name>nFusion Solutions</name>
+      </name>
+      <user>
+         <user>nfusion</user>
+      </user>
+      <email>
+         <email>support@nfusionsolutions.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.1.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>  </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>mageetc</target>
+      </target>
+      <path>
+         <path/>
+         <path>Nfusionsolutions</path>
+         <path>modules/Nfusionsolutions_CurrencyExchangeRates.xml</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>

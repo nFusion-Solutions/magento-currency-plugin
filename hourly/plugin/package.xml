@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Nfusionsolutions_CurrencyExchangeRates_Hourly</name>
+    <version>2.1.0.13</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension adds the capability in Magento to import currency conversion rates from nFusion Solutions&amp;apos; reliable, enterprise-class cloud platform for global currency data.</summary>
+    <description>This extension adds the capability in Magento to import currency conversion rates from nFusion Solutions' reliable, enterprise-class cloud platform for global currency data. All settings are provided in the Magento admin. When you import currency rates in Magento from "System-&amp;amp;gt;Manage Currency" this plugin gives you the option to import rates from nFusion Solutions instead of from default Webservicex. You can also use the scheduled import feature in Magento to have currencies updated automatically using nFusion Solutions data.</description>
+    <notes>Enterprise class global currency exchange rates</notes>
+    <authors><author><name>nFusion Solutions</name><user>nfusion</user><email>support@nfusionsolutions.com</email></author></authors>
+    <date>2015-11-25</date>
+    <time>09:38:15</time>
+    <contents><target name="magecommunity"><dir name="Nfusionsolutions"><dir name="CurrencyExchangeRates"><dir name="Helper"><file name="Data.php" hash="a1270fc3de8dd78695c1f8e597b8d65d"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Type.php" hash="7aece277d3620a0d44571ab5cdbc7c9b"/></dir></dir></dir></dir><file name="Currencyexchangerate.php" hash="f34f28daa4d2de315b409386373cfdcc"/><dir name="Resource"><file name="Setup.php" hash="80ffebbbcf3a4fce497b10f7d05619ef"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="580321f803948605af962b6af387c824"/><file name="config.xml" hash="bd5ab13f3b9f7d932935f22df18b9485"/><file name="system.xml" hash="e6fafe0573ec4b6f7f44c9890619fef6"/></dir><dir name="sql"><dir name="nfusionsolutions_currencyexchangerates_setup"><file name="install-2.1.0.13.php" hash="322a11ea4c8f5bb378f12d4bbcaecab4"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Nfusionsolutions_CurrencyExchangeRates.xml" hash="5236d167a01e671b60df30d05891c5a0"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

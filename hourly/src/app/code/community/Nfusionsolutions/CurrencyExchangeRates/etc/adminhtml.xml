@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Nfusionsolutions_CurrencyExchangeRates extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Nfusionsolutions
+ * @package        Nfusionsolutions_CurrencyExchangeRates
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */ 
+--> 
+<config>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<currencyexchangerates translate="title" module="nfusionsolutions_currencyexchangerates">
+											<title>CurrencyExchangeRates</title>
+										</currencyexchangerates>
+									</children>
+								</config>
+							</children>
+						</system> 
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<menu> 
+			<nfusionsolutions_currencyexchangerates translate="title" module="nfusionsolutions_currencyexchangerates">
+				<title>nFusion Solutions</title>
+				<sort_order>100</sort_order>
+				<children>
+					<currencyexchangerate translate="title" module="nfusionsolutions_currencyexchangerates">
+						<title>Currencies</title> 
+						<sort_order>0</sort_order>
+						<children>
+							<currencyexchangerate_import translate="title" module="nfusionsolutions_currencyexchangerates">
+								<title>Import</title>
+								<action>adminhtml/system_currency/index</action>
+								<sort_order>1</sort_order>
+							</currencyexchangerate_import>
+							<currencyexchangerate_setting translate="title" module="nfusionsolutions_currencyexchangerates">
+								<title>Settings</title>
+								<action>adminhtml/system_config/edit/section/currencyexchangerates</action>
+								<sort_order>2</sort_order>
+							</currencyexchangerate_setting>
+						</children>
+					</currencyexchangerate> 
+				</children>
+			</nfusionsolutions_currencyexchangerates>                     
+		</menu>
+</config>

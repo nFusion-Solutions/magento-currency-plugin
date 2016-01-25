@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Nfusionsolutions_CurrencyExchangeRates extension
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category       Nfusionsolutions
+ * @package        Nfusionsolutions_CurrencyExchangeRates
+ * @copyright      Copyright (c) 2015
+ * @license        http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config>
+    <modules>
+        <Nfusionsolutions_CurrencyExchangeRates>
+            <version>2.1.0.13</version>
+        </Nfusionsolutions_CurrencyExchangeRates>
+    </modules> 
+	<!--/**for importing currency hourly start**/-->
+	<crontab>
+        <jobs>
+            <nfusionsolutions_currencyexchangerates>
+                <schedule>
+                    <cron_expr>0 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>directory/observer::scheduledUpdateCurrencyRates</model>
+                </run>
+            </nfusionsolutions_currencyexchangerates>
+        </jobs>
+    </crontab>
+	<!--/**for importing currency hourly end**/-->
+    <global>
+		<resources>
+            <nfusionsolutions_currencyexchangerates_setup>
+                <setup>
+                    <module>Nfusionsolutions_CurrencyExchangeRates</module>
+                    <class>Nfusionsolutions_CurrencyExchangeRates_Model_Resource_Setup</class>
+                </setup>
+            </nfusionsolutions_currencyexchangerates_setup>
+        </resources>
+		<currency>
+            <import>
+                <services>
+                    <nfusionsolutions_currencyexchangerates>
+                        <name>nFusion Solutions</name>
+                        <model>Nfusionsolutions_CurrencyExchangeRates_Model_Currencyexchangerate</model>
+                    </nfusionsolutions_currencyexchangerates>
+                </services>
+            </import>
+        </currency>
+        <helpers>
+            <nfusionsolutions_currencyexchangerates>
+                <class>Nfusionsolutions_CurrencyExchangeRates_Helper</class>
+            </nfusionsolutions_currencyexchangerates>
+        </helpers>
+        <models>
+            <nfusionsolutions_currencyexchangerates>
+                <class>Nfusionsolutions_CurrencyExchangeRates_Model_Currencyexchangerate</class> 
+            </nfusionsolutions_currencyexchangerates> 
+        </models>
+    </global>
+	<adminhtml>
+        <layout>
+            <updates>
+                <nfusionsolutions_currencyexchangerates>
+                    <file>nfusionsolutions_currencyexchangerates.xml</file>
+                </nfusionsolutions_currencyexchangerates>
+            </updates>
+        </layout> 
+    </adminhtml>
+	<default>
+        <currency>
+            <import>
+                <enabled>1</enabled>
+            </import>
+        </currency>
+		<currency> 
+            <import>
+                <service>nfusionsolutions_currencyexchangerates</service>
+            </import>
+        </currency>
+    </default>
+</config>
